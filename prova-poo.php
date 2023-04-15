@@ -11,10 +11,12 @@ abstract class Pattern
 
 class Cross extends Pattern
 {
+    private $rows = 5;
+    private $cols = 7;
     public function draw()
     {
-        for ($row = 0; $row < 5; $row++) {
-            for ($col = 0; $col < 7; $col++) {
+        for ($row = 0; $row < $this->rows; $row++) {
+            for ($col = 0; $col < $this->cols; $col++) {
                 $this->isCross($row, $col) ? $this->printChar() : print('.');
             }
             echo "\n";
@@ -29,10 +31,12 @@ class Cross extends Pattern
 
 class X extends Pattern
 {
+    private $rows = 5;
+    private $cols = 5;
     public function draw()
     {
-        for ($row = 0; $row < 5; $row++) {
-            for ($col = 0; $col < 5; $col++) {
+        for ($row = 0; $row < $this->rows; $row++) {
+            for ($col = 0; $col < $this->cols; $col++) {
                 $this->isX($row, $col) ? $this->printChar() : print('.');
             }
             echo "\n";
