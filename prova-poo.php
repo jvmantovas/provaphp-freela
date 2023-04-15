@@ -53,16 +53,17 @@ while (true) {
     $patternName = readline("Digite 'Cruz' ou 'X': ");
     echo "Agora escolha uma cor: \n\e[31mVermelho:\e[0m 31 || \e[32mVerde:\e[0m 32 || \e[33mAmarelo:\e[0m 33 || \e[34mAzul:\e[0m 34 || \e[35mRoxo:\e[0m 35 || \e[36mCiano:\e[0m 36 || \e[37mBranco:\e[0m 37\n";
     $color = readline("Número da cor: ");
-    echo "Você escolheu desenhar: \e[{$color}m{$patternName}\e[0m\n";
 
-    if (strtolower($patternName) == 'cruz') {
+    if (strtolower($patternName) == 'cruz' && $color >= 31 && $color <= 37) {
+        echo "Você escolheu desenhar: \e[{$color}m{$patternName}\e[0m\n";
         $pattern = new Cross();
         break;
-    } else if (strtolower($patternName) == 'x') {
+    } else if (strtolower($patternName) == 'x' && $color >= 31 && $color <= 37) {
+        echo "Você escolheu desenhar: \e[{$color}m{$patternName}\e[0m\n";
         $pattern = new X();
         break;
     } else {
-        echo "Opção inválida!\n";
+        echo "\e[31mOpção inválida!\e[0m\n";
     }
 }
 
