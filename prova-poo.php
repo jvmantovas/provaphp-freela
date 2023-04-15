@@ -1,16 +1,4 @@
 <?php
-$patternName = readline("Digite 'Cruz' ou 'X': ");
-
-echo "Você escolheu desenhar: \e[33m{$patternName}\e[0m\n";
-
-if (strtolower($patternName) == 'cruz') {
-    $pattern = new Cross();
-} else if (strtolower($patternName) == 'x') {
-    $pattern = new X();
-} else {
-    echo "Opção inválida!\n";
-    exit();
-}
 
 abstract class Pattern
 {
@@ -23,7 +11,7 @@ abstract class Pattern
 
 class Cross extends Pattern
 {
-    function draw()
+    public function draw()
     {
         for ($row = 0; $row < 5; $row++) {
             for ($col = 0; $col < 7; $col++) {
@@ -33,7 +21,7 @@ class Cross extends Pattern
         }
     }
 
-    function isCross($row, $col)
+    private function isCross($row, $col)
     {
         return $row == 1 || $col == 3;
     }
@@ -41,7 +29,7 @@ class Cross extends Pattern
 
 class X extends Pattern
 {
-    function draw()
+    public function draw()
     {
         for ($row = 0; $row < 5; $row++) {
             for ($col = 0; $col < 5; $col++) {
@@ -51,9 +39,24 @@ class X extends Pattern
         }
     }
 
-    function isX($row, $col)
+    private function isX($row, $col)
     {
         return $row == $col || $row + $col == 5 - 1;
+    }
+}
+
+while (true) {
+    $patternName = readline("Digite 'Cruz' ou 'X': ");
+    echo "Você escolheu desenhar: \e[33m{$patternName}\e[0m\n";
+
+    if (strtolower($patternName) == 'cruz') {
+        $pattern = new Cross();
+        break;
+    } else if (strtolower($patternName) == 'x') {
+        $pattern = new X();
+        break;
+    } else {
+        echo "Opção inválida!\n";
     }
 }
 
