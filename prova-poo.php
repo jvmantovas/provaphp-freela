@@ -25,7 +25,7 @@ class Cross extends Pattern
 
     private function isCross($row, $col)
     {
-        return $row == 1 || $col == 3;
+        return $row == 1 && ($col > 0 && $col < $this->cols - 1) || $col == 3 && ($col > 0 && $col < $this->cols - 1);
     }
 }
 
