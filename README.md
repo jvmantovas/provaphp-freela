@@ -34,7 +34,7 @@ Antes de clonar e executar este algoritmo, você precisará ter instalado em sua
 
 Se estiver no Windows, é necessário adicionar o PHP ao Caminho da Variável de Ambiente para que se torne acessível a partir da linha de comando (CLI). Você pode seguir este [tutorial em inglês](https://www.geeksforgeeks.org/how-to-execute-php-code-using-command-line/) ou este [tutorial em português](https://acervolima.com/como-executar-o-codigo-php-usando-a-linha-de-comando/) para fazer isso.
 
-# Como executar o algoritmo
+### Como executar o algoritmo
 
 No terminal ou prompt de comando, execute os seguintes comandos:
 
