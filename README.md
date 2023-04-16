@@ -25,7 +25,7 @@ O objetivo deste programa é permitir que os usuários "desenhem" padrões no co
 
 ## 📝 Instruções
 
-# Pré-Requisitos
+### Pré-Requisitos
 
 Antes de clonar e executar este algoritmo, você precisará ter instalado em sua máquina as seguintes ferramentas:
 
@@ -63,7 +63,7 @@ Siga as instruções apresentadas pelo programa para escolher o desenho e a cor 
   <img alt="X Roxo" src="https://github.com/jvmantovas/provaphp-freela/blob/main/img/purplex.png">
 </p>
 
-# Como funciona o programa
+### Como funciona o programa
 
 O programa começa pedindo ao usuário que escolha entre a opção de desenhar uma Cruz ou um X. Depois disso, o usuário deve escolher a cor que deseja usar para desenhar. O programa então usa o código ANSI da cor selecionada para imprimir o padrão no console.
 
