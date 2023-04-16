@@ -8,7 +8,7 @@ O programa consiste em um algoritmo PHP para "desenhar" padrões no console, na 
   <a href="#-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-instru%C3%A7%C3%B5es">Instruções de Uso</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#%EF%B8%8F-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologia">Tecnologia</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
@@ -25,7 +25,7 @@ O objetivo deste programa é permitir que os usuários "desenhem" padrões no co
 
 ## 📝 Instruções
 
-# Pré-Requisitos
+### Pré-Requisitos
 
 Antes de clonar e executar este algoritmo, você precisará ter instalado em sua máquina as seguintes ferramentas:
 
@@ -34,7 +34,7 @@ Antes de clonar e executar este algoritmo, você precisará ter instalado em sua
 
 Se estiver no Windows, é necessário adicionar o PHP ao Caminho da Variável de Ambiente para que se torne acessível a partir da linha de comando (CLI). Você pode seguir este [tutorial em inglês](https://www.geeksforgeeks.org/how-to-execute-php-code-using-command-line/) ou este [tutorial em português](https://acervolima.com/como-executar-o-codigo-php-usando-a-linha-de-comando/) para fazer isso.
 
-# Como executar o algoritmo
+### Como executar o algoritmo
 
 No terminal ou prompt de comando, execute os seguintes comandos:
 
@@ -63,7 +63,7 @@ Siga as instruções apresentadas pelo programa para escolher o desenho e a cor 
   <img alt="X Roxo" src="https://github.com/jvmantovas/provaphp-freela/blob/main/img/purplex.png">
 </p>
 
-# Como funciona o programa
+### Como funciona o programa
 
 O programa começa pedindo ao usuário que escolha entre a opção de desenhar uma Cruz ou um X. Depois disso, o usuário deve escolher a cor que deseja usar para desenhar. O programa então usa o código ANSI da cor selecionada para imprimir o padrão no console.
 
